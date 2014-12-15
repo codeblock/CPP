@@ -430,6 +430,9 @@ int main(int argc, const char *argv[]) {
 	Game *game = new Game(10, 10);
 	game->start();
 	
+	delete game;
+	game = NULL;
+	
 	return 0;
 }
 
